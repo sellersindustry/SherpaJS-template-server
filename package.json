@@ -8,6 +8,6 @@
     },
     "homepage": "https://github.com/sellersindustry/SherpaJS-template-server#readme",
     "dependencies": {
-        "sherpa-core": "^0.0.14"
+        "sherpa-core": "^0.0.16"
     }
 }
