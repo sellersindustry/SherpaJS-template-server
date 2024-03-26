@@ -1,11 +1,7 @@
-import { NewServer } from "sherpa-core";
+import { SherpaJS } from "sherpa-core";
 
-export default NewServer({
-    version: 1,
-    app: {
-        module: "./example-module",
-        properties: {
-            test: "hello world"
-        }
+export default SherpaJS.New.server({
+    context: {
+        foo: "bar"
     }
 });

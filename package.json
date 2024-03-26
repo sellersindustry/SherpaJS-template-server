@@ -1,13 +1,11 @@
 {
-    "name": "template_name",
-    "version": "0.0.1",
-    "scripts": {
-        "build": "sherpa build -b Vercel",
-        "dev": "sherpa start",
-        "lint": "sherpa lint"
-    },
-    "homepage": "https://github.com/sellersindustry/SherpaJS-template-server#readme",
-    "dependencies": {
-        "sherpa-core": "^0.0.16"
-    }
+	"name": "template_name",
+	"version": "0.0.2",
+	"scripts": {
+		"build": "sherpa build -b Vercel",
+		"dev": "sherpa build -b local && node ./.sherpa/index.js"
+	},
+	"dependencies": {
+		"sherpa-core": "^1.0.3"
+	}
 }
