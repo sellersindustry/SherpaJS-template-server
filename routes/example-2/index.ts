@@ -6,20 +6,16 @@
  *   date: Sun Mar 26 2024
  *   file: index.ts
  *   project: SherpaJS Template Module
- *   purpose: Endpoint /foo - Load Module
+ *   purpose: Endpoint /example-2 - Load Module
  *
  */
 
-import { SherpaJS } from "sherpa-core";
-import { ContextSchema } from "../../modules/example-module/sherpa.module";
 
+import ExampleModule2 from "../../modules/example-module-2/sherpa.module";
 
-export default SherpaJS.Load.module<ContextSchema>({
-    entry: "../../modules/example-module",
-    context: {
-        exampleProperty: "hello world",
-        exampleNumber: 200
-    }
+export default ExampleModule2.load({
+    exampleProperty: "hello world",
+    exampleNumber: 700
 });
 
 

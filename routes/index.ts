@@ -24,6 +24,11 @@ export async function POST(request:Request, context:Context) {
 }
 
 
+export async function PUT(request:Request, context:Context) {
+    return Response.text("PUT REQUEST");
+}
+
+
 export async function PATCH(request:Request, context:Context) {
     return Response.text("PATCH REQUEST");
 }
