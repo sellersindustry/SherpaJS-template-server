@@ -1,6 +1,10 @@
 import { SherpaJS } from "sherpa-core";
 
-export default SherpaJS.New.server({
+export type Context = {
+    foo: string
+}
+
+export default SherpaJS.New.server<Context>({
     context: {
         foo: "bar"
     }

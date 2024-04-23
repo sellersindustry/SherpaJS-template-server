@@ -11,7 +11,7 @@
  */
 
 
-import { HasContext } from "sherpa-core/dist/src/compiler/models"
+import { ModuleInterface } from "sherpa-core";
 
 
 export type Context = {
@@ -20,7 +20,7 @@ export type Context = {
 }
 
 
-export class ExampleModule2 implements HasContext<Context> {
+export class ExampleModule2 implements ModuleInterface<Context> {
 
     readonly context:Context;
 

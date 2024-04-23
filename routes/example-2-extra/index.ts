@@ -11,7 +11,8 @@
  */
 
 
-import { Request, Response, Context } from "sherpa-core";
+import { Request, Response } from "sherpa-core";
+import { Context } from "../../sherpa.server";
 import ExampleModule2 from "../example-2";
 
 export async function GET(request:Request, context:Context) {

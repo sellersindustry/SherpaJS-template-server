@@ -1,11 +1,12 @@
 {
 	"name": "template_name",
 	"version": "0.0.0",
+	"type": "module",
 	"scripts": {
 		"build": "sherpa build -b Vercel",
 		"dev": "sherpa build -b local && node ./.sherpa/index.js"
 	},
 	"dependencies": {
-		"sherpa-core": "^1.1.2"
+		"sherpa-core": "^1.2.2"
 	}
 }
