@@ -13,7 +13,7 @@
 
 import { Request, Response } from "sherpa-core";
 import { Context } from "../../sherpa.server";
-import ExampleModule2 from "../example-2";
+import ExampleModule2 from "../example-2/module.ts";
 
 export async function GET(request:Request, context:Context) {
     return Response.text(ExampleModule2.getExampleNumber().toString(), { status: 200 });
